@@ -1,0 +1,431 @@
+/* Base styles extra small devices mobile phones etc */
+/* CSS rules */
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 1em;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #222222;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+#nav-bar {
+  padding: 8px;
+  margin: 0;
+}
+
+#logo-with-text {
+  display: none;
+}
+
+#banner {
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+
+h2 {
+  text-align: center;
+  margin: 8px 0;
+}
+
+#mid-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+#description {
+  font-size: 0.75rem;
+}
+
+#team-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+a:hover,
+a:focus {
+  color: #1d4ed8;
+}
+
+#intro {
+  margin-top: 0px;
+}
+
+#jobs {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+#job-table {
+  display: none;
+}
+
+.job {
+  border: 1px solid #dddddd;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+}
+
+.job-detail {
+  color: brown;
+  margin: 3px 0 0 10px;
+}
+
+.application {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.application-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.application-input input,
+select,
+textarea,
+button {
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 8px 16px;
+  font-weight: 600;
+  margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.application-input label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.application-input textarea {
+  width: 80%;
+}
+
+#termsandconditions {
+  margin-top: 20px;
+}
+
+/* Small devices tablets */
+@media screen and (min-width: 576px) {
+  /* css rules */
+  html {
+    font-size: 16px;
+  }
+
+  #logo-with-text {
+    display: block;
+    width: 80px;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #banner {
+    height: 250px;
+  }
+
+  h2 {
+    margin: 16px 0;
+  }
+
+  .application {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .application-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+  }
+
+  .application-input input,
+  select,
+  textarea,
+  button {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 8px 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
+  .application-input label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+  }
+
+  .application-input textarea {
+    width: 80%;
+  }
+
+  #termsandconditions {
+    margin-top: 20px;
+  }
+}
+
+/* Medium Devices laptops etc */
+@media screen and (min-width: 768px) {
+  /* css rules */
+  html {
+    font-size: 20px;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  h2 {
+    margin: 22px 0;
+  }
+
+  #mid-section {
+    max-width: 800px;
+    flex-direction: row;
+  }
+
+  #description {
+    width: 50%;
+    padding-right: 8px;
+  }
+
+  #team {
+    width: 50%;
+  }
+
+  #team-image {
+    width: 100%;
+  }
+
+  #jobs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
+  #jobs-list {
+    display: none;
+  }
+
+  #job-table {
+    display: table;
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+  }
+
+  #table-head th {
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: left;
+    background-color: skyblue;
+  }
+
+  #job-table tr:nth-child(odd) {
+    background-color: #cfecf7;
+  }
+
+  .table-data td {
+    border: 1px solid gray;
+    padding: 5px;
+  }
+
+  .application {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .application-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+  }
+
+  .application-input input,
+  select,
+  textarea,
+  button {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 8px 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
+
+  .application-input label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+  }
+
+  .application-input textarea {
+    width: 80%;
+  }
+
+  #termsandconditions {
+    margin-top: 20px;
+  }
+}
+
+/* large devices desktops etc */
+@media screen and (min-width: 992px) {
+  /* css rules */
+}
+
+/*  
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-bar {
+  border: 1px solid blue;
+}
+
+#logo {
+  width: 80px;
+  padding: 5px;
+}
+
+
+
+h2, h3 {
+  text-align: center;
+}
+
+
+
+#description {
+  width: 400px;
+}
+
+
+
+#job-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#job-links {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.location {
+  margin-top: 0;
+}
+
+.apply-link {
+  margin-bottom: 30px;
+}
+
+#jobs {
+  width: 800px;
+  margin: 0px auto;
+}
+
+#job-table {
+
+}
+
+
+
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  display: inline; /* or inline-block */
+/* margin-right: 10px; Adjust spacing between items */
+/* }  */
+/*  
+#footer {
+  margin-top: 30px;
+  text-align: center;
+  height: 100px;
+  background-color: skyblue;
+  padding-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+*/
