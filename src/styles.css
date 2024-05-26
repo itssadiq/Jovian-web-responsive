@@ -47,6 +47,8 @@ h6 {
 #nav-bar {
   padding: 8px;
   margin: 0;
+  max-width: 100%;
+  /* border: 1px solid blue; */
 }
 
 #logo-with-text {
@@ -127,8 +129,9 @@ a:focus {
 }
 
 .application {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .application-input {
@@ -142,6 +145,7 @@ a:focus {
 select,
 textarea,
 button {
+  width: 90%;
   border: 1px solid gray;
   border-radius: 7px;
   padding: 8px 16px;
@@ -157,11 +161,33 @@ button {
 }
 
 .application-input textarea {
-  width: 80%;
+  width: 70%;
 }
 
 #termsandconditions {
   margin-top: 20px;
+}
+
+#footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer li {
+  margin: 5px auto;
+}
+
+#footer {
+  margin-top: 30px;
+  text-align: center;
+  height: 120px;
+  background-color: #cfecf7;
+  padding-top: 25px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Small devices tablets */
@@ -187,9 +213,8 @@ button {
   h2 {
     margin: 16px 0;
   }
-
   .application {
-    width: 800px;
+    max-width: 500px;
     margin: 0 auto;
   }
 
@@ -204,6 +229,7 @@ button {
   select,
   textarea,
   button {
+    width: 70;
     border: 1px solid gray;
     border-radius: 7px;
     padding: 8px 16px;
@@ -219,11 +245,20 @@ button {
   }
 
   .application-input textarea {
-    width: 80%;
+    width: 50%;
   }
 
   #termsandconditions {
     margin-top: 20px;
+  }
+
+  #footer {
+    height: 80px;
+  }
+
+  #footer li {
+    display: inline;
+    margin-right: 20px;
   }
 }
 
@@ -294,7 +329,7 @@ button {
   }
 
   .application {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -309,6 +344,7 @@ button {
   select,
   textarea,
   button {
+    width: 30%;
     border: 1px solid gray;
     border-radius: 7px;
     padding: 8px 16px;
@@ -330,102 +366,13 @@ button {
   #termsandconditions {
     margin-top: 20px;
   }
+
+  #footer {
+    height: 100px;
+  }
 }
 
 /* large devices desktops etc */
 @media screen and (min-width: 992px) {
   /* css rules */
 }
-
-/*  
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
-#nav-bar {
-  border: 1px solid blue;
-}
-
-#logo {
-  width: 80px;
-  padding: 5px;
-}
-
-
-
-h2, h3 {
-  text-align: center;
-}
-
-
-
-#description {
-  width: 400px;
-}
-
-
-
-#job-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#job-links {
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-}
-
-h4 {
-  margin: 0;
-  font-weight: bold;
-}
-
-.location {
-  margin-top: 0;
-}
-
-.apply-link {
-  margin-bottom: 30px;
-}
-
-#jobs {
-  width: 800px;
-  margin: 0px auto;
-}
-
-#job-table {
-
-}
-
-
-
-#footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-#footer li {
-  display: inline; /* or inline-block */
-/* margin-right: 10px; Adjust spacing between items */
-/* }  */
-/*  
-#footer {
-  margin-top: 30px;
-  text-align: center;
-  height: 100px;
-  background-color: skyblue;
-  padding-top: 25px;
-}
-
-ul {
-  list-style-type: none;
-}
-*/
